@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "StickyNoteRegular",
+    "name": "简历",
+    "link": "https://pan.tanfuhua.com/data/User/admin/home/document/SelfInformation.pdf"
+  },
+  {
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://blog.tanfuhua.com"
+  },
+  {
+    "icon": "Cloud",
+    "name": "网盘",
+    "link": "https://pan.tanfuhua.com/"
+  },
+  {
+    "icon": "PaintRoller",
+    "name": "次世代家装",
+    "link": "https://housepaint.tanfuhua.com"
+  },
+  {
+    "icon": "Search",
+    "name": "懒人搜题",
+    "link": "https://gitee.com/sdu_yuqianfang/Lazy"
+  },
+  {
+    "icon": "Book",
+    "name": "拾音",
+    "link": ""
+  }
+]
