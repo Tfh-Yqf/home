@@ -31,8 +31,13 @@
   },
   {
     "icon": "Gamepad",
-    "name": "小羿萌元神号",
+    "name": "小羿萌原神号",
     "link": "http://twd.tanfuhua.com/"
+  },
+  {
+    "icon": "Image",
+    "name": "煜前方图床",
+    "link": "https://pan.tanfuhua.com/data/User/admin/home/pictures/gh_18d5017b2a5f_430.jpg"
   }
 
 ]
