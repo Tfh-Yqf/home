@@ -25,8 +25,14 @@
     "link": "https://gitee.com/sdu_yuqianfang/Lazy"
   },
   {
-    "icon": "Book",
+    "icon": "Music",
     "name": "拾音",
-    "link": ""
+    "link": "https://github.com/Tfh-Yqf/shiyin"
+  },
+  {
+    "icon": "Gamepad",
+    "name": "小羿萌元神号",
+    "link": "http://twd.tanfuhua.com/"
   }
+
 ]
