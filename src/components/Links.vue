@@ -22,7 +22,7 @@
       <SwiperSlide v-for="site in siteLinksList" :key="site">
         <el-row class="link-all" :gutter="20">
           <el-col v-for="(item, index) in site" :span="8" :key="item">
-            <div
+            <div style="display: flex;align-items: center;flex-wrap: wrap;gap: 20px"
               class="item cards"
               :style="index < 3 ? 'margin-bottom: 20px' : null"
               @click="jumpLink(item)"
