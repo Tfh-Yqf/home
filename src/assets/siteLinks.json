@@ -31,12 +31,14 @@
   },
   {
     "icon": "Gamepad",
-    "name": "公众号-小羿萌",
+    "title": "微信公众号",
+    "name": "小羿萌",
     "link": "http://twd.xym8.cn/"
   },
   {
-    "icon": "Image",
-    "name": "小程序-煜前方图床",
+    "icon": "Weixin",
+    "title": "微信小程序",
+    "name": "煜前方图床",
     "link": "https://pan.tanfuhua.com/data/User/admin/home/pictures/gh_18d5017b2a5f_430.jpg"
   }
 

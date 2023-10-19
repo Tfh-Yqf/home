@@ -2,51 +2,84 @@
   <div v-if="siteLinks[0]" class="links">
     <div class="line">
       <Icon size="20">
-        <Link />
+        <Link/>
       </Icon>
       <span class="title">网站列表</span>
     </div>
     <!-- 网站列表 -->
     <Swiper
-      v-if="siteLinks[0]"
-      :modules="[Pagination, Mousewheel]"
-      :slides-per-view="1"
-      :space-between="40"
-      :pagination="{
+        v-if="siteLinks[0]"
+        :modules="[Pagination, Mousewheel]"
+        :slides-per-view="1"
+        :space-between="40"
+        :pagination="{
         el: '.swiper-pagination',
         clickable: true,
         bulletElement: 'div',
       }"
-      :mousewheel="true"
+        :mousewheel="true"
     >
       <SwiperSlide v-for="site in siteLinksList" :key="site">
         <el-row class="link-all" :gutter="20">
           <el-col v-for="(item, index) in site" :span="8" :key="item">
-            <div style="display: flex;align-items: center;flex-wrap: wrap;gap: 20px"
-              class="item cards"
-              :style="index < 3 ? 'margin-bottom: 20px' : null"
-              @click="jumpLink(item)"
+            <div style="display: flex;flex-direction: column;align-items: center;flex-wrap: wrap;gap: 10px"
+                 class="item cards"
+                 :style="index < 3 ? 'margin-bottom: 20px' : null"
+                 @click="jumpLink(item)"
+                 v-if="item.title!=undefined&&item.title!=null"
             >
-              <Icon size="26">
-                <component :is="siteIcon[item.icon]" />
+              <div style="display: flex;align-items: center">
+                <Icon size="35" style="flex-shrink: 0">
+                  <component :is="siteIcon[item.icon]"/>
+                </Icon>
+                <span class="name text-hidden">{{ item.title }}</span>
+              </div>
+              <span class="name text-hidden">{{ item.name }}</span>
+            </div>
+
+
+            <div style="display: flex;align-items: center;flex-wrap: wrap;gap: 20px"
+                 class="item cards"
+                 :style="index < 3 ? 'margin-bottom: 20px' : null"
+                 @click="jumpLink(item)"
+                 v-else
+            >
+              <Icon size="26" style="flex-shrink: 0">
+                <component :is="siteIcon[item.icon]"/>
               </Icon>
               <span class="name text-hidden">{{ item.name }}</span>
             </div>
           </el-col>
         </el-row>
       </SwiperSlide>
-      <div class="swiper-pagination" />
+      <div class="swiper-pagination"/>
     </Swiper>
   </div>
 </template>
 
 <script setup>
-import { Icon } from "@vicons/utils";
+import {Icon} from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑选并在此处引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode, StickyNoteRegular, PaintRoller, Search,Music,Gamepad,Image } from "@vicons/fa"; // 注意使用正确的类别
-import { mainStore } from "@/store";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Mousewheel } from "swiper";
+import {
+  Link,
+  Blog,
+  CompactDisc,
+  Cloud,
+  Compass,
+  Book,
+  Fire,
+  LaptopCode,
+  StickyNoteRegular,
+  PaintRoller,
+  Search,
+  Music,
+  Gamepad,
+  Image,
+  Weixin
+} from "@vicons/fa"; // 注意使用正确的类别
+import {mainStore} from "@/store";
+import {Swiper, SwiperSlide} from "swiper/vue";
+import {Pagination, Mousewheel} from "swiper";
 import siteLinks from "@/assets/siteLinks.json";
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -77,7 +110,8 @@ const siteIcon = {
   Search,
   Gamepad,
   Music,
-  Image
+  Image,
+  Weixin
 };
 
 // 链接跳转
@@ -102,37 +136,45 @@ onMounted(() => {
     display: flex;
     align-items: center;
     animation: fade 0.5s;
+
     .title {
       margin-left: 8px;
       font-size: 1.15rem;
       text-shadow: 0 0 5px #00000050;
     }
   }
+
   .swiper {
     left: -10px;
     width: calc(100% + 20px);
     padding: 5px 10px 0;
     z-index: 0;
+
     .swiper-slide {
       height: 100%;
     }
+
     .swiper-pagination {
       position: static;
       margin-top: 4px;
+
       :deep(.swiper-pagination-bullet) {
         background-color: #fff;
         width: 18px;
         height: 4px;
         border-radius: 4px;
         transition: opacity 0.3s;
+
         &:hover {
           opacity: 1;
         }
       }
     }
   }
+
   .link-all {
     height: 220px;
+
     .item {
       height: 100px;
       width: 100%;
@@ -140,8 +182,9 @@ onMounted(() => {
       align-items: center;
       flex-direction: row;
       justify-content: center;
-      padding: 0 10px;
+      padding: 0 5px 0 5px;
       animation: fade 0.5s;
+      flex-wrap: wrap;
 
       &:hover {
         transform: scale(1.02);
@@ -157,6 +200,7 @@ onMounted(() => {
         font-size: 1.1rem;
         margin-left: 8px;
       }
+
       @media (min-width: 720px) and (max-width: 820px) {
         .name {
           display: none;
@@ -174,6 +218,7 @@ onMounted(() => {
         }
       }
     }
+
     @media (max-width: 720px) {
       height: 180px;
     }
