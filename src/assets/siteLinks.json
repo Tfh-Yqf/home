@@ -15,6 +15,11 @@
     "link": "https://pan.tanfuhua.com/"
   },
   {
+    "icon": "Warehouse",
+    "name": "ERP",
+    "link": "https://erp.tanfuhua.com/"
+  },
+  {
     "icon": "PaintRoller",
     "name": "次世代家装",
     "link": "https://github.com/Tfh-Yqf/Homepaint"
@@ -23,6 +28,11 @@
     "icon": "Search",
     "name": "懒人搜题",
     "link": "https://gitee.com/sdu_yuqianfang/Lazy"
+  },
+  {
+    "icon": "DigitalOcean",
+    "name": "海洋PNT系统",
+    "link": "http://101.42.44.6:30569"
   },
   {
     "icon": "Music",
