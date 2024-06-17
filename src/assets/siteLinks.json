@@ -1,19 +1,5 @@
 [
-  {
-    "icon": "StickyNoteRegular",
-    "name": "简历",
-    "link": "https://pan.tanfuhua.com/data/User/admin/home/document/SelfInformation.pdf"
-  },
-  {
-    "icon": "Blog",
-    "name": "博客",
-    "link": "https://blog.tanfuhua.com"
-  },
-  {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.tanfuhua.com/"
-  },
+
   {
     "icon": "Warehouse",
     "name": "ERP",
@@ -30,9 +16,9 @@
     "link": "https://gitee.com/sdu_yuqianfang/Lazy"
   },
   {
-    "icon": "DigitalOcean",
-    "name": "海洋PNT系统",
-    "link": "http://101.42.44.6:30569"
+    "icon": "Cloud",
+    "name": "网盘",
+    "link": "https://pan.tanfuhua.com/"
   },
   {
     "icon": "Music",
@@ -53,3 +39,4 @@
   }
 
 ]
+
