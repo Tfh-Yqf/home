@@ -2,4 +2,4 @@
 
 
 
-[点击查看比赛图表](https://www.taiyi.top/competition-chart?id=681c9dae43e60b87d9f09df4)
+[点击查看比赛图表](http://competition-test.taiyi.top/competition-chart?id=684fa451e5bf5b65a7b2a92b)
