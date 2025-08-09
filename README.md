@@ -4,9 +4,10 @@
 <p>
 <strong><h2>谭福华の主页</h2></strong>
 </p>
+[点击查看比赛图表](https://www.taiyi.top/competition-chart?id=681c9dae43e60b87d9f09df4)
 
 ![谭福华の主页]()
-#### [源项目地址]([https://github.com/imsyy/home](https://www.taiyi.top/competition-chart?id=681c9dae43e60b87d9f09df4))
+#### [源项目地址]([https://github.com/imsyy/home])
 >主页的 Logo 字体已经过压缩，若用本站 Logo 以外的字母会变回默认字体，这里是 [完整字体](https://file.imsyy.top/font/Other/Pacifico-Regular.ttf)
 
 ### Demo
